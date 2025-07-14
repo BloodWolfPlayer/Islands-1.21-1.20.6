@@ -103,6 +103,7 @@ public enum BiomeMaterials {
     STONY_PEAKS(Material.STONE),
     MANGROVE_SWAMP(Material.MANGROVE_ROOTS),
     CHERRY_GROVE(Material.CHERRY_LOG),
+    PALE_GARDEN(Material.CREAKING_HEART),
     DEFAULT(Material.DIRT),
     CUSTOM(Material.DIRT);
     //DEFAULT(null),

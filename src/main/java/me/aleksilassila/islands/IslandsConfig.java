@@ -1,11 +1,17 @@
 package me.aleksilassila.islands;
 
-import me.aleksilassila.islands.generation.IslandGeneration;
-import me.aleksilassila.islands.utils.BiomeMaterials;
-import me.aleksilassila.islands.utils.Permissions;
-import me.ryanhamshire.GriefPrevention.Claim;
-import me.ryanhamshire.GriefPrevention.ClaimPermission;
-import me.ryanhamshire.GriefPrevention.CreateClaimResult;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.UUID;
+
+import javax.annotation.Nullable;
+
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.OfflinePlayer;
@@ -16,10 +22,12 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
-import javax.annotation.Nullable;
-import java.io.File;
-import java.io.IOException;
-import java.util.*;
+import me.aleksilassila.islands.generation.IslandGeneration;
+import me.aleksilassila.islands.utils.BiomeMaterials;
+import me.aleksilassila.islands.utils.Permissions;
+import me.ryanhamshire.GriefPrevention.Claim;
+import me.ryanhamshire.GriefPrevention.ClaimPermission;
+import me.ryanhamshire.GriefPrevention.CreateClaimResult;
 
 public enum IslandsConfig {
     INSTANCE;
@@ -167,7 +175,7 @@ public enum IslandsConfig {
                     values.put("material", BiomeMaterials.valueOf(biome).name());
                 } catch (Exception exception) {
                     values.put("material", BiomeMaterials.DEFAULT.name());
-                }
+                } //! Function seems broken.
 
                 values.put("public", String.valueOf(e.isPublic ? 1 : 0));
 

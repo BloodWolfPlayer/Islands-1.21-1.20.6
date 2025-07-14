@@ -17,10 +17,10 @@ dependencies {
     implementation("org.jetbrains:annotations:20.1.0")
 
 
-    compileOnly("org.spigotmc:spigot-api:1.21-R0.1-SNAPSHOT")
-    compileOnly("com.sk89q.worldedit:worldedit-bukkit:7.3.0-SNAPSHOT")
+    compileOnly("org.spigotmc:spigot-api:1.21.6-R0.1-SNAPSHOT")
+    compileOnly("com.sk89q.worldedit:worldedit-bukkit:7.3.15-SNAPSHOT")
     compileOnly("com.github.MilkBowl:VaultAPI:1.7.1")
-    compileOnly("com.github.GriefPrevention:GriefPrevention:16.18.3")
+    compileOnly("com.github.GriefPrevention:GriefPrevention:16.18.4")
     implementation("com.github.stefvanschie.inventoryframework:IF:0.10.14")
 }
 
